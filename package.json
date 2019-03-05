@@ -1,0 +1,36 @@
+{
+  "name": "test-hismith",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.11.0",
+    "popper.js": "^1.14.7",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.2.3"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technosova/test-HiSmith.git"
+  },
+  "author": "Anastasia Tarasova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/technosova/test-HiSmith/issues"
+  },
+  "homepage": "https://github.com/technosova/test-HiSmith#readme"
+}

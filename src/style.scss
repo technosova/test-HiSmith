@@ -1,0 +1,118 @@
+$bg-color: white;
+$orange-red: #ff351b;
+
+body {
+  background: $bg-color;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.language-select {
+  justify-content: flex-end;
+  margin-top: 15px;
+  margin-bottom: 0;
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #000000;
+  &__item {
+    margin-right: 6px;
+    cursor: pointer;
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 50px;
+}
+.menu-main {
+  list-style-type: none;
+  display: flex;
+  &__item {
+    height: 24px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-size: 20px;
+    border-right: solid 1px;
+    color: #000000;
+    cursor: pointer;
+  }
+}
+
+.homepage-slider {
+  background-image: url(./images/bitmap_5.png);
+  width: 100vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider-control {
+  &__next {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./images/arrow_2.svg);
+    opacity: 1;
+  }
+}
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.slider-image {
+  padding-top: 114px;
+  float: right;
+}
+
+.slider-number {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  &__current-page {
+    &::after {
+      content: "|";
+      color: red;
+      padding-left: 8px;
+    }
+  }
+  &__total-page {
+    padding-left: 8px;
+  }
+}
+.slider-content {
+  padding-top: 320px;
+}
+
+.slider-title {
+  font-family: PTSerif;
+  font-weight: normal;
+  letter-spacing: normal;
+  font-stretch: normal;
+  &__big {
+    font-family: PTSerif;
+    width: 376px;
+    height: 85px;
+    font-size: 28px;
+    line-height: 1.03;
+    color: #ffffff;
+  }
+  &__more {
+    cursor: pointer;
+    width: 67px;
+    height: 18px;
+    font-size: 14px;
+    font-style: italic;
+    color: $orange-red;
+  }
+}
